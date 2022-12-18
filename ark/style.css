@@ -1,0 +1,131 @@
+body {
+    margin: 40px auto;
+    background-image: url('img/starry.gif');
+    max-width: 750px;
+}
+img.header{
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+h3.subtitle{
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 0px;
+}
+nav b{
+    color: #AAAAAA;
+    font-size: 18px;
+}
+header{
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+    border: 1px solid #AAAAAA;
+    background-color: #0d0d0d;
+}
+div.nav{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #AAAAAA;
+    background-color: #0d0d0d;
+}
+nav.nav{
+    padding:5px;
+}
+nav a{
+    color: #AAAAAA;
+    font-size: 18px;
+}
+div.main a{
+    color: #AAAAAA;
+}
+div.main{
+    border: 1px solid #AAAAAA;
+    color: #AAAAAA;
+    background-color: #0d0d0d;
+    overflow:auto;
+    position: relative;
+    font-family: Bitstream Vera Sans Mono, monospace;
+}
+div.centered{
+	margin: 5px;
+	text-align:center;
+}
+img.album{
+    width:330px;
+    height:200px;
+    object-position: top;
+    object-fit:cover;
+}
+div.left{
+    float: left;
+    border-right: 1px solid #AAAAAA;
+    border-top: 1px solid #AAAAAA;
+    width: 373px;
+    text-align: left;
+}
+div.right{
+    float: right;
+    border-left: 1px solid #AAAAAA;
+    border-top: 1px solid #AAAAAA;
+    width: 373px;
+    text-align: left;
+}
+table.album{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table.exif{
+    margin-left: auto;
+    margin-right: auto;
+}
+div.albummain{
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+div.footer{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #0d0d0d;
+}
+
+code{
+    padding: 7px;
+    color: #FFA500;
+}
+div.section{
+	text-align: center;
+}
+div.article{
+	margin: 10px;
+}
+div.article div.imgparent{
+	margin:auto;
+	text-align: center;
+}
+div.article img{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+table, tr, td, th{
+    border: 1px solid #AAAAAA;
+}
+footer{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #AAAAAA;
+    text-align: center;
+    padding: 5px;
+}
+.button{
+    height: 31px;
+    width: 88px;
+}
