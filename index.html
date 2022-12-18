@@ -5,20 +5,40 @@
   <style>
     body{
       text-align: center;
+      color: white;
+      background: url('bg.png');
+    }
+    div.main {
+      width:600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     table{
-      border: 1px solid black;
+      width:400px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid white;
+    }
+    th, td{
+      border: 1px solid white;
+    }
+    a{
+      color: rgb(0, 255, 213);
+    }
+    td.col1 {
+      padding:50px;
     }
   </style>
   </head>
   <body>
+    <div class="main">
     <h1>Website Templates</h1>
     <p>These are a compilation of website templates which I have designed for myself and other people. I have redacted all information on these pages and replaced with
-    samples. As you can see, I enjoy doing older styles of web design while employing modern CSS.</p>
+    samples. I like to do simple and older styles of web design while employing modern CSS, but I am comfortable doing other styles as well.</p>
     <table>
       <tr>
-        <td>
-        <a href="sof/index.html">sof</a>
+        <td class="col1">
+          <a href="sof/index.html">sof</a>
         </td>
         <td>
          <p>Website template I made for an artist friend of mine. She sketched it out and gave me feedback while I implemented it. 
@@ -26,7 +46,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td class="col1">
           <a href="ark/index.html">ark</a>
         </td>
         <td>
@@ -34,7 +54,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td class="col1">
           <a href="sg/index.html">sg</a>
         </td>
         <td>
@@ -42,5 +62,6 @@
         </td>
       </tr>
     </table>
+  </div>
   </body>
 </html>
