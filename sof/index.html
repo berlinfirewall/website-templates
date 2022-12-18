@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<script>
+			var txtArr = ["Text Selected From Random", "Randomly Selected Text", "Text Selected in a random fashion", "Text Selected randomly from array of Text using JS"];
+
+			function writeLines(){
+				var line1 = txtArr[Math.floor(Math.random()*txtArr.length)];
+				document.getElementById("diagonal").innerHTML = line1;
+			}
+            function move(){
+                var children = document.getElementById('scroll-wrapper').children;
+                child = children[0];
+                var leftmargin = window.getComputedStyle(child).getPropertyValue('margin-left');   
+                increment = (parseInt(leftmargin, 10) - 1).toString() + "px";
+                child.style.marginLeft = increment;
+            }
+            function appendText(){
+                const sofia = document.createElement("div");
+                sofia.className = "element";
+                sofia.innerHTML = "SOFIA";
+                document.getElementById("scroll-wrapper").appendChild(sofia);
+            }
+            function deleteItem(){
+                var children = document.getElementById('scroll-wrapper').children;
+                child = children[0];
+                children[0].remove();
+                console.log("deleted");    
+            }
+			var i = 0;
+			window.onload = function(){
+				console.log(txtArr);
+				for (var j=0; j < 18; j++){
+					appendText();
+				}
+				setInterval(() => {
+					writeLines();
+				}, 1250);
+				setInterval(function(){
+					move();
+					if (i === 41){
+						deleteItem();
+						appendText();
+						i = 0;
+					}
+					i++
+				}, 10);
+			}
+       
+		</script>
+		<title>page template sofia</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="default">
+		<div class="top_bar">
+			<table>
+				<tr>
+					<td class="links"><a href="">IMAGERY</a></td>
+					<td class="links"><a href="">LIBRARY</a></td>
+					<td class="links"><a href="">MEMORY</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="wrapper">
+			<div class="orb">
+				<img src="img/moon-phase-16.png" width=300 height=300 alt="moon">
+			</div>
+
+			<table class="main">
+				<tr>
+					<td colspan=4>
+						<div class="scroll-container">
+						<div id="scroll-wrapper">
+       	 				</div>
+						</div>
+						<div class="normal">
+							<i>LOCATION: XXX<br>
+							DAYS SINCE MY BIRTH: XXX
+							</i><br>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="vert">
+						<div class="vertical">
+							<b><i><a href="">LINK 1 TEXT GOES HERE</a></i></b>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</td>
+					<td class="vert">
+						<div class="vertical">
+							<b><i><a href="">LINK 2 TEXT GOES RIGHT HERE</a></i></b>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</td>
+					<td style="vertical-align: top" class="auto">
+							<div style="height:400px; width:40px;">
+							<img style="padding-left:15px; vertical-align: top; margin-right: 90px;" alt="flag" src="img/example_flag.gif">
+							</div>
+							
+				
+					</td>
+					
+					<td class="images">
+						<table class="format-wrapper" style="margin-bottom: -30px; margin-right:-5px;">
+							<tr style="width: 100%">
+								<td colspan="3" class="about">
+									<div class="about-wrapper">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        
+									</div>
+								</td>
+							</tr>
+				
+							<tr style="position: relative;">
+								<td style="position: relative; width: 500px; margin-right:-2px;">
+									<table style="position: absolute; bottom: 0;">
+										<tr style="text-align: right; padding: 0px; margin: 0px 0px 0px 0px;">
+											<td style="padding-right: 3px;">
+												<img class="image" alt="image" src="img/imaeg.png">
+											</td>
+										</tr>
+										<tr style="text-align: right; padding: 0px; margin: 0px 0px 0px 0px;">
+											<td>
+												<table style="padding-right: -1px; margin-bottom: -3px;">
+													<tr>
+														<td>
+															<a href=""><img id="linocut" src="img/linocut_thumb_bw.png" alt="linocut"></a>
+														</td>
+														<td>
+															<a href=""><img class="minotaur" src="img/painting_bw.png" alt="painting1"></a>
+														</td>
+														<td>
+															<a href=""><img class="couch" src="img/couch_thumb_bw.png" alt="painting"></a>
+														</td>
+													</tr>
+												</table>	
+											</td>
+										</tr>
+									</table>
+								</td>
+								
+								<td style="position: relative; width:97px;">
+									<table>
+										<tr>
+											<td style="width: 103px"><a href=""><img class="tryptych" src="img/painting_bw.png"></a></td>
+										</tr>
+										<tr>
+											<td style="width: 103px"><a href=""><img class="tryptych" src="img/painting_bw.png"></a></td>
+										</tr>
+										<tr>
+											<td style="width: 103px"><a href=""><img class="tryptych" src="img/painting_bw.png"></a></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<div style="position: fixed; width:90%; margin-top:-300px; z-index: -1">
+				<u><i><div id="diagonal" class="diagonal">
+					
+				</div></i></u>
+			</div>
+			
+		</div>
+		<div class="buttons">
+			<img src="img/example_button.gif" alt="example">
+            <img src="img/browser1.gif" alt="browser">
+            <img src="img/example_button.gif" alt="example">
+            <img src="img/browser1.gif" alt="browser">
+            <img src="img/example_button.gif" alt="example">
+            <img src="img/browser1.gif" alt="browser">
+		</div>
+	</body>
+</html>

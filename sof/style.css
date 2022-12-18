@@ -1,0 +1,234 @@
+@font-face {
+	font-family: 'MS Mincho';
+	src: url('fonts/MS-Mincho.woff2') format('woff2'),
+	     url('fonts/MS-Mincho.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+#scroll-wrapper{
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	width:625px;
+	padding: 0px;
+	margin-bottom: 0px;
+	font-family: 'MS Mincho';
+	margin-left: auto;
+	overflow-x: hidden;
+	margin-right: auto;
+}
+div.element{
+	display: inline;
+	font-style: italic;
+}
+
+div.vertical {
+	text-align: left;
+	float: left;
+	writing-mode: vertical-lr;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+td.about{
+	margin-top: 9px;
+	font-size: 11px;
+	height:140px;
+	margin-right: 1px;
+	vertical-align: top;
+}
+.about-wrapper{
+	border: 1px solid white;
+	padding:5px;
+	width:150px;
+	float: right;
+	text-align: right;
+	margin-left:150px;
+	margin-right:13px;
+}
+div.vertical-flipped {
+	writing-mode: vertical-rl;
+	transform: scale(-1, -1);
+	-ms-transform: scale(-1, -1);
+	-o-transform: scale(-1, -1);
+	-webkit-transform: scale(-1, -1);
+	-moz-transform: scale(-1, 1);
+}
+div.normal{
+	font-family: 'MS Mincho';
+	font-size: 11px;
+	vertical-align: text-top;  
+	float: left;
+	text-align: left;
+}
+.scroll-container{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	overflow: hidden;
+	display: flex;
+}
+.scroll-list{
+	display: flex;
+	margin-top: 20px;
+	animation: ticker 10s infinite linear;
+}
+span.item{
+	margin-right: 0px;
+}
+
+body.default {
+	background-image:url('img/bg.png');
+	color: white;
+	overflow: hidden;
+}
+
+div.diagonal {
+	text-align: center;
+	margin-right: 175px;
+	margin-bottom: 25px;
+	font-family: 'MS Mincho';
+	vertical-align: bottom;
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+
+div.frame{
+	pointer-events: all;
+	position: relative;
+	align-items: center;
+	text-align: center;
+	background-repeat: repeat;
+	
+}
+div.wrapper{
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	border: 5px solid #FFF;
+	width: 625px;
+	background: url('img/snow_fast.gif');
+	
+}
+div.top_bar{
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width:625px;
+	margin-bottom: 10px;
+	background-color: #000000;
+	border: 2px solid #FFF;
+}
+div.orb{
+	display: block;
+	margin-top: 50px;
+	margin-left: 50px;
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	pointer-events: none;
+	z-index: 1;
+}
+table.main{
+	display: block;
+	width: 625px;
+	z-index: 0;
+	border-collapse: collapse;
+	position: relative;
+}
+table.top{
+	width:625px;
+}
+td.links{
+	text-align: center;
+	width: 208px;
+}
+td.vert{
+	width: 20px;
+}
+td.auto{
+	width: 34px;
+}
+a {
+	color:white;
+	text-align: center;	
+}
+td.images{
+	width: 520px;
+	margin-right: 10px;
+	margin-bottom:-2px;
+}
+table.format_wrapper{
+	position:relative;
+}
+table.bottom{
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.tryptych{
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: 10px;
+	width: 81px;
+	height: 146px;
+}
+.minotaur{
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: 4px;
+	width: 77px;
+	height: 146px;
+}
+.buttons {
+	padding: 10px;
+	width: 550px;
+	display: block;
+	position: relative;
+	top: 0px;
+	bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid white;
+	margin-bottom: -2px;
+}
+.buttons img {
+	text-align: center;
+}
+.couch{
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: 4px;
+}
+#linocut {
+	padding: 5px;
+	border: 1px solid white;
+	margin-right:4px;
+}
+.tryptych {
+	margin-bottom: -1px;
+}
+
+.tryptych:hover{
+	content:url('img/painting.png')
+}
+#linocut:hover{
+	content:url('img/linocut_thumb.png')
+}
+.minotaur:hover{
+	content:url('img/painting.png')
+}
+.couch:hover{
+	content:url('img/couch_thumb.png')
+}
