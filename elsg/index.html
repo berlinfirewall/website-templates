@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>ELSG</title>
+    <script>
+        const eng = document.getElementById('main').innerHTML;
+        function makeRomanian(){
+            document.getElementById('main').innerHTML = "Nu vorbesc românește! (I don't speak Romanian!)";
+        }
+        function makeEnglish(){
+            document.getElementById('main').innerHTML = "This was a concept page for a project for my Romanian friend. This would be in English, but if you click the flags, it would be Romanian.";
+        }
+    </script>
+</head>
+<body>
+<table class="main">
+    <tr>
+        <td>
+            <img class="header" src="logo_vechi_revizuit_mic.png" />
+        </td>
+
+    </tr>
+    <tr style="width:100%">
+        <td colspan="2">
+            
+        </td>
+    </tr>
+    <tr>
+        <td class="sidebar">
+            <ul>
+                    <li><a class="link">Link 1</a></li>
+                    <li><a class="link">Link 2</a></li>
+                    <li><a class="link">Link 3</a></li>
+                    <li><a class="link">Link 4</a></li>
+                    <li style="padding-top: 10px;"><a style="padding:15px" onclick="makeRomanian()"><img src="ro.gif"></a> <a style="padding:15px" onclick="makeEnglish()"><img src="gb.gif"></a></li>
+            </ul> 
+        </td>
+        <td>
+            <p id="main">
+               This was a concept page for a project for my Romanian friend. This would be in English, but if you click the flag, it would change languages.
+            </p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

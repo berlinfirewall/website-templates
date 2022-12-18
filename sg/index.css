@@ -1,0 +1,134 @@
+#titleimg{
+    width: 188px;
+    height: 37px;
+    border: 0px;
+    margin-left: 10px;
+}
+#titleimg:hover{
+    outline: 2px solid #00FF00;
+}
+
+table.main{
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+tr.top{
+    background: #000000;
+    height: 70px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+tr.body{
+    background: #1A1A1A;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0px;
+    border-top: 6px solid #00FF00;
+    clear: left;
+    float: right;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
+    vertical-align: top;
+}
+
+tr.footer{
+    background: #1A1A1A;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+td{
+    margin: 0;
+    border-style: none;
+}
+p{
+    font-family: BabasNeue;
+    color: #00FF00;
+    letter-spacing: .3px;
+}
+ul{
+    margin-left:10%;
+    font-family: BabasNeue;
+    color: #00FF00;
+    letter-spacing: .3px;
+    font-size: 20px;
+}
+a{
+    font-family: BabasNeue;
+    color: #00FF00;
+    letter-spacing: .3px;
+}
+a:active{
+    font-family: BabasNeue;
+    color: #00FF00;
+    letter-spacing: .3px;
+}
+h1{
+    margin-left:5%;
+    font-family: BabasNeue;
+    color: #00FF00;
+    letter-spacing: .3px; 
+}
+html{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Index Specific*/
+div.container{
+    position: relative;
+    margin: 10px;
+}
+td.main{
+    display: block;
+    clear: both;
+    width:100%;
+    box-sizing: border-box;
+}
+.map{
+    
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width:50%;
+    z-index: 1;
+}
+.va{
+    position: absolute;
+    width:38%;
+    margin-left:31%;
+    margin-right:31%;
+    z-index: 2;
+}
+.tm{
+    position: absolute;
+    width:26%;
+    margin-left:37%;
+    margin-right:37%;
+    margin-top:4.5%;
+    z-index: 3;
+}
+.cmh{
+    position: absolute;
+    width:15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    margin-top:8.75%;
+    z-index: 4;
+}

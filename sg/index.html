@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SG</title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="icon" href="img/favicon.ico" />
+        <script>
+            function replaceImg(img, element){
+                document.getElementById(element).src = img;
+            }
+        </script>
+    </head>
+    <body>
+        <table class="main" cellspacing="0" cellpadding="0">
+            <tr class="top">
+                <td>
+                    <a href="index.html"><img id="titleimg" src="img/logo1.png"></img></a>
+                </td>
+            </tr>
+            <tr class="body">
+                <td class="main">
+                    <div class="container">
+                        <a href=""><img src="img/va1.png" class="va" id="va" onmouseenter="replaceImg('img/va2.png', 'va')" onmouseout="replaceImg('img/va1.png', 'va')"></a>
+                        <a href=""><img src="img/tm4.png" class="tm" id="tm" onmouseenter="replaceImg('img/tm5.png', 'tm')" onmouseout="replaceImg('img/tm4.png', 'tm')"></a>
+                        <a href=""><img src="img/Asset_10tha_channel.png" class="cmh" id="cmh" onmouseenter="replaceImg('img/Asset_11tha_channel.png', 'cmh')" onmouseout="replaceImg('img/Asset_10tha_channel.png', 'cmh')"></a>
+                        <img class="map" src="img/globe.png">
+                    </div>
+                </td>
+            </tr>
+            <tr class="footer">
+                <td>
+                    <img alt="" border="0" src="img/btn_donateCC_LG.gif"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
